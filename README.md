@@ -33,3 +33,10 @@ A secure, fully-featured Bank Account Transaction Management System built with D
 
 ### 5. Transaction History
 ![History](screenshots/history.png)
+
+
+### 6. Dark Mode Dashboard
+![DarkMode](screenshots/darkmode.png)
+
+### 6. CSV Export
+![CSVExport](screenshots/CSVExport.png)
