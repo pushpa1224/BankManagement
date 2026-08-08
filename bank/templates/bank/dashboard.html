@@ -1,0 +1,43 @@
+{% extends 'bank/base.html' %}
+{% block content %}
+<div class="hero text-center mb-5">
+    <h1>Welcome back, {{ account.account_holder_name }}!</h1>
+    <p class="lead">Account Number: <strong>{{ account.account_number }}</strong></p>
+    <h2 class="display-4 mt-3 fw-bold">${{ account.balance }}</h2>
+    <p>Current Balance</p>
+    <div class="mt-4">
+        <a href="{% url 'deposit' %}" class="btn btn-light btn-lg me-3">Deposit Funds</a>
+        <a href="{% url 'withdraw' %}" class="btn btn-outline-light btn-lg">Withdraw Funds</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card border-primary h-100 shadow-sm">
+            <div class="card-body text-center">
+                <i class="bi bi-arrow-down-circle text-primary fs-1 mb-3"></i>
+                <h5 class="card-title">Total Deposits</h5>
+                <h3 class="card-text text-primary">${{ total_deposits }}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card border-danger h-100 shadow-sm">
+            <div class="card-body text-center">
+                <i class="bi bi-arrow-up-circle text-danger fs-1 mb-3"></i>
+                <h5 class="card-title">Total Withdrawals</h5>
+                <h3 class="card-text text-danger">${{ total_withdrawals }}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card border-info h-100 shadow-sm">
+            <div class="card-body text-center">
+                <i class="bi bi-card-list text-info fs-1 mb-3"></i>
+                <h5 class="card-title">Total Transactions</h5>
+                <h3 class="card-text text-info">{{ total_transactions }}</h3>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

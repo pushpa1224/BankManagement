@@ -1,0 +1,19 @@
+{% extends 'bank/base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm mt-5 border-danger">
+            <div class="card-header bg-danger text-white">
+                <h4 class="mb-0">Withdraw Funds</h4>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-danger w-100">Withdraw</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
