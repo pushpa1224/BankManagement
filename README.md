@@ -1,21 +1,20 @@
-# Bank Account Transaction Management System
+# Bank Management System
 
-A secure, fully-featured Bank Account Transaction Management System built with Django. 
+This is a Bank Account Transaction Management System assignment. It allows users to create accounts, deposit and withdraw money, and view their transaction history.
 
 ## Features
-- **User Authentication**: Secure registration, login, and logout. Data is isolated per user.
-- **Account Management**: Seamlessly create a bank account with auto-generated 10-digit account numbers.
-- **Transactions**: Deposit and withdraw funds with built-in overdraft protection.
-- **Transaction History**: View, search (by type), and filter (by date range) past transactions. Export to CSV functionality included!
-- **Dashboard**: Aggregated metrics for total deposits, total withdrawals, and total transactions.
-- **Beautiful UI**: Fully responsive frontend built with Bootstrap 5.3, including a Dark Mode toggle!
+- User registration and login
+- Bank account creation with auto-generated account numbers
+- Deposit and withdraw functionality with overdraft protection
+- Transaction history with date and type filters
+- Dashboard showing current balance and totals
+- Responsive UI with dark mode support
 
-## Setup Instructions
-1. Ensure you have Python installed.
-2. Navigate to the project directory.
-3. Apply migrations: `python manage.py migrate`
-4. Run the development server: `python manage.py runserver`
-5. Open your browser and go to `http://127.0.0.1:8000/register/`.
+## Setup
+1. Install requirements
+2. Run migrations: `python manage.py migrate`
+3. Start the server: `python manage.py runserver`
+4. Go to `http://127.0.0.1:8000/register/` in your browser.
 
 ## Screenshots
 
@@ -36,7 +35,7 @@ A secure, fully-featured Bank Account Transaction Management System built with D
 
 
 ### 6. Dark Mode Dashboard
-![DarkMode](screenshots/darkmode.png)
+![DarkMode](screenshots/DarkMode.png)
 
 ### 6. CSV Export
 ![CSVExport](screenshots/CSVExport.png)
